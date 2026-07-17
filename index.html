@@ -23,6 +23,13 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <div class="site-preloader" aria-hidden="true">
+      <div class="preloader-mark">
+        <img src="assets/images/logo-dc.png" alt="" />
+        <span class="preloader-glow"></span>
+      </div>
+    </div>
+
     <div class="page-shell">
       <header class="site-header">
         <nav class="navbar navbar-expand-lg">
@@ -66,31 +73,31 @@
           <div class="container">
             <div class="row align-items-center g-4 g-xl-5">
               <div class="col-lg-7">
-                <span class="eyebrow">Diseño, desarrollo y soporte profesional</span>
-                <h1>Impulsamos marcas y sistemas con una presencia digital elegante, potente y moderna.</h1>
-                <p class="lead-copy">
+                <span class="eyebrow reveal-up">Diseño, desarrollo y soporte profesional</span>
+                <h1 class="reveal-up reveal-delay-1">Impulsamos marcas y sistemas con una presencia digital elegante, potente y moderna.</h1>
+                <p class="lead-copy reveal-up reveal-delay-2">
                   En DC Graphics & Web Design combinamos diseño gráfico, desarrollo fullstack y servicio técnico
                   informático para construir soluciones visuales y tecnológicas a la altura de tu negocio.
                 </p>
-                <div class="hero-actions">
+                <div class="hero-actions reveal-up reveal-delay-3">
                   <a class="btn btn-brand btn-lg" href="#contacto">Solicitar propuesta</a>
                   <a class="btn btn-outline-brand btn-lg" href="#servicios">Ver servicios</a>
                 </div>
                 <div class="row g-3 hero-points">
-                  <div class="col-md-4">
+                  <div class="col-md-4 reveal-up reveal-delay-2">
                     <div class="info-chip">Diseño y desarrollo centrados en resultados reales</div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 reveal-up reveal-delay-3">
                     <div class="info-chip">Atención personalizada para emprendedores y empresas</div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 reveal-up reveal-delay-4">
                     <div class="info-chip">Soluciones modernas, responsivas y listas para crecer</div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-5">
-                <div class="hero-card">
+              <div class="col-lg-5 reveal-up reveal-delay-2">
+                <div class="hero-card tilt-surface">
                   <img src="assets/images/logo-dc.png" alt="Logo de DC Graphics & Web Design" />
                 </div>
               </div>
@@ -100,7 +107,7 @@
 
         <section class="services section-space" id="servicios">
           <div class="container">
-            <div class="section-heading">
+            <div class="section-heading reveal-up">
               <span class="eyebrow">Servicios</span>
               <h2>Soluciones integrales para imagen, software y soporte técnico.</h2>
               <p>
@@ -110,8 +117,8 @@
             </div>
 
             <div class="row g-4">
-              <div class="col-md-6 col-xl-4">
-                <article class="service-card h-100">
+              <div class="col-md-6 col-xl-4 reveal-up">
+                <article class="service-card h-100 tilt-surface">
                   <div class="service-media">
                     <img
                       src="assets/images/services/diseno-grafico.jpg"
@@ -131,8 +138,8 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4">
-                <article class="service-card h-100">
+              <div class="col-md-6 col-xl-4 reveal-up reveal-delay-1">
+                <article class="service-card h-100 tilt-surface">
                   <div class="service-media">
                     <img
                       src="assets/images/services/desarrollo-fullstack.jpg"
@@ -152,8 +159,8 @@
                 </article>
               </div>
 
-              <div class="col-md-6 col-xl-4">
-                <article class="service-card h-100">
+              <div class="col-md-6 col-xl-4 reveal-up reveal-delay-2">
+                <article class="service-card h-100 tilt-surface">
                   <div class="service-media">
                     <img
                       src="assets/images/services/servicio-tecnico.jpg"
@@ -180,19 +187,19 @@
         <section class="about section-space" id="nosotros">
           <div class="container">
             <div class="row align-items-center g-4 g-xl-5">
-              <div class="col-lg-5">
+              <div class="col-lg-5 reveal-up">
                 <div class="about-visual">
-                  <div class="about-logo-frame">
-                    <img src="assets/images/logo-dc.png" alt="Identidad visual de DC Graphics & Web Design" />
+                  <div class="about-logo-frame tilt-surface">
+                    <img src="assets/images/about/about-main.jpg" alt="Equipo creativo y técnico trabajando en conjunto" loading="lazy" />
                   </div>
                   <div class="about-mini-grid">
-                    <img src="assets/images/services/diseno-grafico.jpg" alt="Diseño gráfico" loading="lazy" />
-                    <img src="assets/images/services/desarrollo-fullstack.jpg" alt="Desarrollo fullstack" loading="lazy" />
+                    <img class="reveal-up reveal-delay-1" src="assets/images/about/about-team.jpg" alt="Reunión de trabajo y planificación de proyectos" loading="lazy" />
+                    <img class="reveal-up reveal-delay-2" src="assets/images/about/about-workspace.jpg" alt="Espacio de trabajo profesional orientado a tecnología y diseño" loading="lazy" />
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-7">
+              <div class="col-lg-7 reveal-up reveal-delay-1">
                 <span class="eyebrow">Nosotros</span>
                 <h2>Diseñamos experiencias visuales y tecnológicas con criterio estratégico.</h2>
                 <p>
@@ -211,22 +218,22 @@
         <section class="showcase section-space-sm">
           <div class="container">
             <div class="row g-4">
-              <div class="col-md-4">
-                <article class="showcase-card h-100">
-                  <span class="metric">+100%</span>
-                  <p>Diseño visual enfocado en transmitir valor, confianza y diferenciación.</p>
+              <div class="col-md-4 reveal-up">
+                <article class="showcase-card h-100 tilt-surface">
+                  <span class="metric"><span class="metric-count" data-target="3" data-suffix="+">0</span></span>
+                  <p>Áreas integradas de servicio para resolver imagen, software y soporte desde un mismo lugar.</p>
                 </article>
               </div>
-              <div class="col-md-4">
-                <article class="showcase-card h-100">
-                  <span class="metric">Fullstack</span>
-                  <p>Desarrollo de sistemas y webs modernas con arquitectura clara y enfoque comercial.</p>
+              <div class="col-md-4 reveal-up reveal-delay-1">
+                <article class="showcase-card h-100 tilt-surface">
+                  <span class="metric"><span class="metric-count" data-target="24" data-suffix="h">0</span></span>
+                  <p>Enfoque ágil y disponibilidad digital para acompañar consultas, ajustes y evolución del proyecto.</p>
                 </article>
               </div>
-              <div class="col-md-4">
-                <article class="showcase-card h-100">
-                  <span class="metric">Soporte</span>
-                  <p>Asistencia técnica para mantener tus equipos y herramientas funcionando sin fricción.</p>
+              <div class="col-md-4 reveal-up reveal-delay-2">
+                <article class="showcase-card h-100 tilt-surface">
+                  <span class="metric"><span class="metric-count" data-target="100" data-suffix="%">0</span></span>
+                  <p>Compromiso con soluciones funcionales, visualmente sólidas y orientadas a resultados concretos.</p>
                 </article>
               </div>
             </div>
@@ -236,7 +243,7 @@
         <section class="contact section-space" id="contacto">
           <div class="container">
             <div class="row g-4 g-xl-5">
-              <div class="col-lg-5">
+              <div class="col-lg-5 reveal-up">
                 <span class="eyebrow">Contacto</span>
                 <h2>Hablemos de tu próximo proyecto.</h2>
                 <p class="contact-copy">
@@ -244,26 +251,26 @@
                 </p>
 
                 <div class="row g-3 contact-list">
-                  <div class="col-sm-6 d-flex">
-                    <div class="contact-item w-100">
+                  <div class="col-sm-6 d-flex reveal-up">
+                    <div class="contact-item w-100 tilt-surface">
                       <h3>Ubicación</h3>
                       <p>La Rioja, Argentina</p>
                     </div>
                   </div>
-                  <div class="col-sm-6 d-flex">
-                    <div class="contact-item w-100">
+                  <div class="col-sm-6 d-flex reveal-up reveal-delay-1">
+                    <div class="contact-item w-100 tilt-surface">
                       <h3>Email</h3>
                       <p><a href="mailto:danielcarrizo74@gmail.com">danielcarrizo74@gmail.com</a></p>
                     </div>
                   </div>
-                  <div class="col-sm-6 d-flex">
-                    <div class="contact-item w-100">
+                  <div class="col-sm-6 d-flex reveal-up reveal-delay-2">
+                    <div class="contact-item w-100 tilt-surface">
                       <h3>Teléfono</h3>
                       <p><a href="https://wa.me/5493804841911" target="_blank" rel="noreferrer">380-4841911</a></p>
                     </div>
                   </div>
-                  <div class="col-sm-6 d-flex">
-                    <div class="contact-item w-100">
+                  <div class="col-sm-6 d-flex reveal-up reveal-delay-3">
+                    <div class="contact-item w-100 tilt-surface">
                       <h3>Horario</h3>
                       <p>Lunes a Viernes, 9:00 a 18:00</p>
                     </div>
@@ -271,8 +278,8 @@
                 </div>
               </div>
 
-              <div class="col-lg-7">
-                <div class="contact-form-card">
+              <div class="col-lg-7 reveal-up reveal-delay-1">
+                <div class="contact-form-card tilt-surface">
                   <h3>Solicitá una consulta</h3>
                   <p>Contanos qué necesitás y te responderemos con una propuesta a medida.</p>
 
