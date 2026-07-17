@@ -394,6 +394,13 @@ h2 {
   background: var(--panel-strong);
 }
 
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
 .form-alert {
   margin: 1rem 0 1.2rem;
   padding: 0.9rem 1rem;
