@@ -7,7 +7,25 @@ const navLinks = document.querySelectorAll(".site-nav .nav-link");
 const sections = document.querySelectorAll("main section[id]");
 const metricCounts = document.querySelectorAll(".metric-count");
 const preloader = document.querySelector(".site-preloader");
+const heroVariantContainer = document.querySelector("[data-hero-variant]");
+const heroImage = document.querySelector(".hero-image");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+if (heroVariantContainer && heroImage) {
+  const selectedVariant = String(heroVariantContainer.dataset.heroVariant || "a").toLowerCase();
+  const fallbackVariant = "a";
+  const activeVariant = heroImage.dataset[`src${selectedVariant.toUpperCase()}`] ? selectedVariant : fallbackVariant;
+  const nextSrc = heroImage.dataset[`src${activeVariant.toUpperCase()}`];
+  const nextAlt = heroImage.dataset[`alt${activeVariant.toUpperCase()}`];
+
+  if (nextSrc) {
+    heroImage.src = nextSrc;
+  }
+
+  if (nextAlt) {
+    heroImage.alt = nextAlt;
+  }
+}
 
 if (yearTarget) {
   yearTarget.textContent = String(new Date().getFullYear());
